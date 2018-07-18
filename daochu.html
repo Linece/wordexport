@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+	<head>
+		<script src="jquery-3.2.1.min.js"></script>
+		<script src="FileSaver.js"></script>
+		<script src="jquery.wordexport.js"></script>
+	</head>
+	
+		<style>
+			table, th, td
+  {
+  border: 1px solid blue;
+  }
+		</style>
+	<body>
+	<input type="button" value="上传"/>
+		<div id="page-content">
+				<table >
+					<tr>
+						<td>Your content here</td>
+						<td>Your content here</td>
+						<td>Your content here</td>
+						<td>Your content here</td>
+					</tr>
+					<tr>
+						<td>Your content here</td>
+						<td>Your content here</td>
+						<td>Your content here</td>
+						<td>Your content here</td>
+					</tr>
+				</table>
+			
+
+			</div>
+			
+			<a class="word-export" href="javascript:void(0)"> 导出 </a>
+			<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$("a.word-export").click(function(event) {
+				$("#page-content").wordExport();
+					});
+			});
+			</script>
+	</body>
+</html>
